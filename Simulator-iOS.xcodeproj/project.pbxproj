@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		E776D0132CCEB64600CEE61B /* F1-Race-Start-Simulator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "F1-Race-Start-Simulator-Info.plist"; sourceTree = "<group>"; };
 		E79E1EDD2CBFFAFB005F5B82 /* F1 Race Start Simulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F1 Race Start Simulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -32,6 +33,7 @@
 		E79E1ED42CBFFAFB005F5B82 = {
 			isa = PBXGroup;
 			children = (
+				E776D0132CCEB64600CEE61B /* F1-Race-Start-Simulator-Info.plist */,
 				E79E1EDF2CBFFAFB005F5B82 /* Simulator-iOS */,
 				E79E1EDE2CBFFAFB005F5B82 /* Products */,
 			);
@@ -255,12 +257,13 @@
 				DEVELOPMENT_TEAM = 5SY26T5Q8C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "F1-Race-Start-Simulator-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,12 +292,13 @@
 				DEVELOPMENT_TEAM = 5SY26T5Q8C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "F1-Race-Start-Simulator-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
