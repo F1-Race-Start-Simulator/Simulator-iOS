@@ -42,4 +42,5 @@ struct GameView: View {
 
 #Preview {
     GameView(buttonHidden: Binding.constant(false))
+        .environmentObject(AppViewModel())
 }

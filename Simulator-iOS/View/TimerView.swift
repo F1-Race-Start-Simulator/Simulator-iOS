@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TimerView: View {
+    @EnvironmentObject var appVM: AppViewModel
     @State private var counter: Double = 0.0
     @State private var timer: Timer?
     @Binding var startPlay: Bool
@@ -18,9 +19,15 @@ struct TimerView: View {
         VStack {
             Text(jumpStart ? "JUMP START" : String(format: "%.3f", counter))
                 .F1Bold(size: 48)
-                .padding()
                 .foregroundColor(jumpStart ? .accent : .primary)
+            
+            if timer == nil && counter > 0 && appVM.isBestPerformance(counter) {
+                Label("NEW BEST PERFORMANCE !", systemImage: "crown.fill")
+                    .F1Regular(size: 16)
+                    .foregroundColor(.gold)
+            }
         }
+        .padding()
         .onChange(of: timerStarted, perform: { value in
             if value && !jumpStart {
                 startTimer()
@@ -50,6 +57,7 @@ struct TimerView: View {
     func resetTimer() {
         if timer == nil {
             stopTimer()
+            if !jumpStart { appVM.addPerformance(counter) }
             counter = 0.0
         }
     }
@@ -61,4 +69,5 @@ struct TimerView: View {
         timerStarted: .constant(false),
         jumpStart: .constant(false)
     )
+    .environmentObject(AppViewModel())
 }
