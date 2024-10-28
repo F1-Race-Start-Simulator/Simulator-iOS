@@ -13,28 +13,17 @@ struct BottomNavbarView: View {
     var body: some View {
         if !startPlay {
             HStack {
-                NavigationLink(destination: EmptyView()) {
-                    Image(systemName: "line.horizontal.3")
+                NavigationLink(destination: AllPerformancesView()) {
+                    Image(systemName: "trophy.fill")
                         .imageScale(.large)
                 }
                 
                 Spacer()
-                
-                Button {
-                    startPlay.toggle()
-                } label: {
-                    Text("START")
-                        .F1Regular(size: 16)
-                        .padding(.init(top: 10, leading: 20, bottom: 10, trailing: 20))
-                        .background(.green)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                }
+                ButtonGameView(text: "start", action: { startPlay.toggle() })
                 
                 Spacer()
-                
-                NavigationLink(destination: EmptyView()) {
-                    Image(systemName: "person.circle.fill")
+                Button(action: { exit(0) }) {
+                    Image(systemName: "pip.exit")
                         .imageScale(.large)
                 }
             }
@@ -46,4 +35,5 @@ struct BottomNavbarView: View {
 
 #Preview {
     BottomNavbarView(startPlay: .constant(false))
+        .environmentObject(AppViewModel())
 }
