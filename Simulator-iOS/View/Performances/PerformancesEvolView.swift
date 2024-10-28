@@ -10,6 +10,7 @@ import Charts
 
 struct PerformancesEvolView: View {
     @EnvironmentObject var appVM: AppViewModel
+    @State private var device = UIDevice.current.userInterfaceIdiom
     
     var body: some View {
         VStack(spacing: 30) {
@@ -30,7 +31,7 @@ struct PerformancesEvolView: View {
                 }
                 .chartYScale(domain: -1...0)
                 .chartYAxis {
-                    AxisMarks(position: .leading, values: AxisMarkValues.stride(by: 0.2)) { value in
+                    AxisMarks(position: .leading, values: AxisMarkValues.stride(by: device == .pad ? 0.1 : 0.2)) { value in
                         AxisGridLine().foregroundStyle(Color.primary)
                         AxisValueLabel {
                             if let doubleValue = value.as(Double.self) {
@@ -43,7 +44,8 @@ struct PerformancesEvolView: View {
                     }
                 }
                 .padding(.horizontal)
-                .frame(height: 250)
+                .frame(maxWidth: 700)
+                .frame(height: device == .pad ? 400 : 250)
                 
                 VStack {
                     if let index = perfs.indices.min(by: { perfs[$0].time < perfs[$1].time }) {

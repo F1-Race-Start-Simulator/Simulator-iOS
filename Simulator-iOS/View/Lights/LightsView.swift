@@ -28,6 +28,7 @@ struct LightsView: View {
                 .foregroundColor(colorScheme == .dark ? Color(hex: "#38383E") : .black)
                 .frame(height: 15)
         )
+        .frame(maxWidth: 350)
         .padding()
         .onChange(of: buttonHidden, perform: { value in
             if value && !jumpStart {

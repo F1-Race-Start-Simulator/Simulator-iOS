@@ -19,6 +19,7 @@ struct ContentView: View {
             .navigationBarTitle("Home", displayMode: .inline)
             .navigationBarHidden(true)
         }
+        .navigationViewStyle(.stack)
     }
 }
 
