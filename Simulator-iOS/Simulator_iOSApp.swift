@@ -16,6 +16,7 @@ struct Simulator_iOSApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(AppViewModel())
         }
     }
     
@@ -32,5 +33,8 @@ struct Simulator_iOSApp: App {
         
         UIBarButtonItem.appearance().setTitleTextAttributes(attributesReg, for: .normal)
         UINavigationBar.appearance().titleTextAttributes = attributesBold
+        
+        UISegmentedControl.appearance().setTitleTextAttributes(attributesReg, for: .normal)
+        UISegmentedControl.appearance().backgroundColor = UIColor(Color.gray)
     }
 }
