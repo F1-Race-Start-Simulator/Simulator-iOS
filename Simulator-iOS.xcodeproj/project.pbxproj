@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXFileReference section */
@@ -12,11 +12,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		E79E1EDF2CBFFAFB005F5B82 /* Simulator-iOS */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Simulator-iOS";
-			sourceTree = "<group>";
-		};
+		E79E1EDF2CBFFAFB005F5B82 /* Simulator-iOS */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Simulator-iOS"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +84,7 @@
 				};
 			};
 			buildConfigurationList = E79E1ED82CBFFAFB005F5B82 /* Build configuration list for PBXProject "Simulator-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -100,7 +97,6 @@
 			);
 			mainGroup = E79E1ED42CBFFAFB005F5B82;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = E79E1EDE2CBFFAFB005F5B82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
