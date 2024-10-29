@@ -15,7 +15,7 @@ struct ButtonGameView: View {
         Button {
             action()
         } label: {
-            Text(text.uppercased())
+            Text(LocalizedStringKey(text))
                 .F1Regular(size: 16)
                 .padding(.init(top: 10, leading: 20, bottom: 10, trailing: 20))
                 .background(.green)
@@ -26,5 +26,5 @@ struct ButtonGameView: View {
 }
 
 #Preview {
-    ButtonGameView(text: "print", action: { print("print") })
+    ButtonGameView(text: "start_button", action: { print("print") })
 }

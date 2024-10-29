@@ -16,7 +16,7 @@ struct ListPerformancesView: View {
             ForEach(perfs.indices, id: \.self) { i in
                 let perf = perfs[i]
                 HStack {
-                    if order == "Best times" {
+                    if order == "best_time_index" {
                         Text(String(format: "%.2d", i + 1))
                             .F1Bold(size: 32)
                             .foregroundColor(.accent)
@@ -49,5 +49,5 @@ struct ListPerformancesView: View {
 }
 
 #Preview {
-    ListPerformancesView(perfs: .constant([]), order: .constant("Best times"))
+    ListPerformancesView(perfs: .constant([]), order: .constant("best_time_index"))
 }

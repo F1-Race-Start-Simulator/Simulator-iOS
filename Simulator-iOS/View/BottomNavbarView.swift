@@ -19,7 +19,7 @@ struct BottomNavbarView: View {
                 }
                 
                 Spacer()
-                ButtonGameView(text: "start", action: { startPlay.toggle() })
+                ButtonGameView(text: "start_button", action: { startPlay.toggle() })
                 
                 Spacer()
                 Button(action: { exit(0) }) {

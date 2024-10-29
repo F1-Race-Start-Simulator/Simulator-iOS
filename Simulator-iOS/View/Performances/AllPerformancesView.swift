@@ -15,8 +15,8 @@ struct AllPerformancesView: View {
         VStack {
             if appVM.performances.count > 1 {
                 Picker("cat", selection: $catView) {
-                    Text("Ranking").tag("rank")
-                    Text("Evolution").tag("evol")
+                    Text("rank_pick_label").tag("rank")
+                    Text("evol_pick_label").tag("evol")
                 }
                 .pickerStyle(.segmented)
                 .padding(.horizontal)
@@ -32,10 +32,7 @@ struct AllPerformancesView: View {
             
             Spacer()
         }
-        .navigationBarTitle(
-            "Your performances - \(catView == "rank" ? "Ranking" : "Evolution")",
-            displayMode: .inline
-        )
+        .navigationBarTitle("perfs_name", displayMode: .inline)
     }
 }
 

@@ -43,30 +43,31 @@ struct PerformancesEvolView: View {
                         }
                     }
                 }
-                .padding(.horizontal)
                 .frame(maxWidth: 700)
                 .frame(height: device == .pad ? 400 : 250)
                 
                 VStack {
                     if let index = perfs.indices.min(by: { perfs[$0].time < perfs[$1].time }) {
                         let bestPerf = perfs[index]
-                            Text("Best performance - \(String(format: "%.3f", bestPerf.time)) s")
+                            Text("best_perf_text_\(String(format: "%.3f", bestPerf.time))")
                                 .F1Bold(size: 20)
                                 .foregroundColor(.purple)
                             
-                            Text("(\(bestPerf.date.toString()) - Attempt n°\(index + 1))")
+                            Text("best_perf_attempt_text_\(bestPerf.date.toString())_\(index + 1, specifier: "%d")")
                                 .F1Bold(size: 16)
                                 .foregroundColor(.gray)
                     }
                     
                     let avgTime = appVM.averagePerformance()
-                    Text("Average performance - \(String(format: "%.3f", avgTime)) s")
+                    Text("avg_perf_text_\(String(format: "%.3f", avgTime))")
                         .F1Bold(size: 20)
                         .foregroundColor(.green)
                         .padding(.top)
                 }
+                .multilineTextAlignment(.center)
             }
         }
+        .padding(.horizontal)
     }
 }
 

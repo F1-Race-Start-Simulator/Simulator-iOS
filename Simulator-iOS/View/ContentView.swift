@@ -16,7 +16,7 @@ struct ContentView: View {
                 GameView(buttonHidden: $startPlay)
                 BottomNavbarView(startPlay: $startPlay)
             }
-            .navigationBarTitle("Home", displayMode: .inline)
+            .navigationBarTitle("home_name", displayMode: .inline)
             .navigationBarHidden(true)
         }
         .navigationViewStyle(.stack)
@@ -26,4 +26,5 @@ struct ContentView: View {
 #Preview {
     ContentView()
         .environmentObject(AppViewModel())
+        .environment(\.locale, .init(identifier: "de"))
 }

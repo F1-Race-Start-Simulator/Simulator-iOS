@@ -10,7 +10,7 @@ import Foundation
 extension Date {
     func toString() -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
+        dateFormatter.dateFormat = NSLocalizedString("date_format", comment: "")
         dateFormatter.timeZone = TimeZone.current
         
         return dateFormatter.string(from: self)

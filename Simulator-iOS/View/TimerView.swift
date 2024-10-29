@@ -17,16 +17,18 @@ struct TimerView: View {
     
     var body: some View {
         VStack {
-            Text(jumpStart ? "JUMP START" : String(format: "%.3f", counter))
-                .F1Bold(size: 48)
+            Text(jumpStart ? NSLocalizedString("jump_start", comment: "").uppercased()
+                           : String(format: "%.3f", counter))
+            .F1Bold(size: jumpStart ? 36 : 48)
                 .foregroundColor(jumpStart ? .accent : .primary)
             
             if timer == nil && counter > 0 && appVM.isBestPerformance(counter) {
-                Label("NEW BEST PERFORMANCE !", systemImage: "crown.fill")
+                Label("best_perf_new", systemImage: "crown.fill")
                     .F1Regular(size: 16)
                     .foregroundColor(.gold)
             }
         }
+        .multilineTextAlignment(.center)
         .padding()
         .onChange(of: timerStarted, perform: { value in
             if value && !jumpStart {
