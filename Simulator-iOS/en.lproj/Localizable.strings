@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  Simulator-iOS
+
+  Created by Florian DAVID on 29/10/2024.
+  
+*/
+
+"home_name" = "Home";
+"perfs_name" = "Your performances";
+"best_perf_new" = "NEW BEST PERFORMANCE !";
+
+// Buttons
+"start_button" = "START";
+"play_game_button" = "PLAY THE GAME";
+
+"rank_pick_label" = "Rankings";
+"evol_pick_label" = "Evolution";
+
+"jump_start" = "Jump start";
+"date_format" = "MM/dd/yyyy HH:mm";
+
+// Filters performances
+"sort_by" = "Sort by";
+"best_time_index" = "Best time";
+"date_index" = "Date";
+
+// Best perf & average perf
+"best_perf_text_%@" = "Your record - %@ s";
+"best_perf_attempt_text_%@_%d" = "(%@ - Attempt n°%d)";
+"avg_perf_text_%@" = "Average reaction time - %@ s";

@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  Simulator-iOS
+
+  Created by Florian DAVID on 29/10/2024.
+  
+*/
+
+"home_name" = "Thuis";
+"perfs_name" = "Uw voorstellingen";
+"best_perf_new" = "NIEUW RECORD !";
+
+// Knoppen
+"start_button" = "START";
+"play_game_button" = "HET SPEL SPELEN";
+
+"rank_pick_label" = "Ranglijst";
+"evol_pick_label" = "Evolutie";
+
+"jump_start" = "Valse start";
+"date_format" = "dd-MM-yyyy HH:mm";
+
+// Prestatiefilters
+"sort_by" = "Sorteren op";
+"best_time_index" = "Beste tijd";
+"date_index" = "Datum";
+
+// Beste prestatie en gemiddelde prestatie
+"best_perf_text_%@" = "Uw record - %@ s";
+"best_perf_attempt_text_%@_%d" = "(%@ - Poging nr. %d)";
+"avg_perf_text_%@" = "Gemiddelde reactietijd - %@ s";

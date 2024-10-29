@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  Simulator-iOS
+
+  Created by Florian DAVID on 29/10/2024.
+  
+*/
+
+"home_name" = "Accueil";
+"perfs_name" = "Tes performances";
+"best_perf_new" = "NOUVEAU RECORD !";
+
+// Boutons
+"start_button" = "DÉPART";
+"play_game_button" = "JOUER AU JEU";
+
+"rank_pick_label" = "Classement";
+"evol_pick_label" = "Évolution";
+
+"jump_start" = "Départ volé";
+"date_format" = "dd/MM/yyyy HH:mm";
+
+// Filtrer les performances
+"sort_by" = "Trier par";
+"best_time_index" = "Meilleur temps";
+"date_index" = "Date";
+
+// Meilleure performance et performance moyenne
+"best_perf_text_%@" = "Ton record - %@ s";
+"best_perf_attempt_text_%@_%d" = "(%@ - Tentative n°%d)";
+"avg_perf_text_%@" = "Temps de réaction moyen - %@ s";
