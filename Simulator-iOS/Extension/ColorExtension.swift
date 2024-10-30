@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+/**
+ * Extension of Color who allow to initialize a color from a hexadecimal code (with # or not)
+ * If the hexadecimal code is null, it returns the default accent color
+ */
 extension Color {
     init(hex: String?) {
         if let hex = hex {

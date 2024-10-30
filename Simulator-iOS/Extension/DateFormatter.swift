@@ -7,6 +7,10 @@
 
 import Foundation
 
+/**
+ * Extension of Date who allows to convert a date to a string.
+ * The date format depends of a localized string.
+ */
 extension Date {
     func toString() -> String {
         let dateFormatter = DateFormatter()

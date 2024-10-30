@@ -20,6 +20,9 @@ struct Simulator_iOSApp: App {
         }
     }
     
+    /**
+     * Configure fonts and display style for user interface elements
+     */
     func setFontsForBars() {
         let attributesBold: [NSAttributedString.Key: Any] = [
             .font: UIFont(name: "Formula1-Display-Bold", size: 18)!,
